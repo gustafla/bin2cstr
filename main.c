@@ -52,7 +52,8 @@ int main(int argc, char *argv[]) {
                 printf("\\x%02x", bytes[0]);
                 // if next character can be mistaken for a hex number
                 if (read == 2 && (bytes[1] >= 'a' && bytes[1] <= 'f')
-                        || (bytes[1] >= 'A' && bytes[1] <= 'F')) {
+                        || (bytes[1] >= 'A' && bytes[1] <= 'F')
+                        || (bytes[1] >= '0' && bytes[1] <= '9')) {
                     printf("\"\""); // split the string literal to disambiguate
                 }
             }
