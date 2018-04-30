@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
     }
 
     // print ending quote and length variable
-    printf("\";const unsigned long %s_LEN=%lul;", argv[1], ftell(file));
+    printf("\";const unsigned long %s_LEN=%lul;\n", argv[1], ftell(file));
 
     fclose(file);
     return EXIT_SUCCESS;
