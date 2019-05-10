@@ -1,4 +1,4 @@
-# bin2cstr by Lauri "luutifa" Gustafsson
+# Binary to C string (literal)
 
 This small tool was made for embedding data in self-compiling executables.
 
